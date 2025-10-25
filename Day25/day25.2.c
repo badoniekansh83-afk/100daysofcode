@@ -1,0 +1,23 @@
+//Q50: Write a program to print the following pattern:
+//*****
+// ****
+//  ***
+//   **
+//    *
+
+#include <stdio.h>
+
+int main() {
+    for(int i = 0; i < 5; i++) {
+        // Print leading spaces
+        for(int j = 0; j < i; j++) {
+            printf(" ");
+        }
+        // Print stars
+        for(int k = 0; k < 5 - i; k++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
